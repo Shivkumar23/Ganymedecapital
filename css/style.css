@@ -1,0 +1,773 @@
+/*-----------------------------------------------------------
+* Template Name    : Ganymede Capital Website
+* Author Name      : Shiv Kumar Prajapat
+* File Description : This files Includes all Style CSS and all script files
+*------------------------------------------------------------*/
+
+/*======================================================================
+ Table of Content:
+ 
+ 01. Google Fonts
+ 02. Basic Styles
+ 03. Typography
+ 04. Buttons
+ 05. Pre Loader
+ 06. Header Section
+ 07. Navigation Menu
+ 08. Banner Section
+ 09. About Section
+ 10. Why Work Section
+ 11. What we do Section
+ 12. Our Team Section
+ 13. Our Team 1 Section
+ 14. Fund Level Finance Section
+ 15. Contact Us Section
+ 16. Responsive CSS
+ ========================================================================*/
+
+ body {
+  padding: 0px;
+  margin: 0px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+table,
+tr,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+a,
+li,
+ul,
+ol,
+p,
+form,
+input {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: normal;
+  font-family: "Regular";
+  outline: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none !important;
+}
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none !important;
+}
+input:focus,
+textarea:focus {
+  border: none;
+}
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: #1c3031;
+  font-family: "Regular";
+  transition: 0.25s all ease-in-out;
+}
+
+.form-control:focus {
+  background-color: #fff !important;
+  border-color: #80bdff !important;
+  outline: 0 !important;
+}
+/* Global CSS */
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 32px;
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #8c8c8c;
+}
+
+/* Common Classes */
+.main-container {
+  width: 100%;
+  position: relative;
+}
+
+/* Paddings and Margins */
+.section-padding {
+  padding: 105px 0px;
+}
+.small-padding {
+  padding: 50px;
+}
+
+/* Font Facing  Start */
+
+:root {
+  --white: #fcf9f9;
+}
+
+@font-face {
+  /*  */
+  font-family: "Regular";
+  src: url("../fonts/Cronos-Pro-Regular.otf");
+}
+@font-face {
+  /*  */
+  font-family: "Pro-Italic";
+  src: url("../fonts/Cronos-Pro-Italic.ttf");
+}
+
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+/* Font Facing  End */
+
+#main {
+  position: relative;
+  max-width: 1921px;
+  margin: auto;
+  overflow-y: hidden;
+}
+#main::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+/* Heading */
+
+.heading-tab {
+  position: relative;
+}
+.heading-tab:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.heading {
+  position: relative;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: var(--font_b);
+  padding-bottom: 15px;
+  display: inline-block;
+  color: #013440;
+  font-weight: 600;
+}
+
+.heading::before {
+  position: absolute;
+  content: "";
+  top: -3px;
+  width: 50px;
+  height: 2px;
+  background-color: #a68f65;
+  left: 0;
+  right: 0;
+  display: inline-block;
+}
+/* Image Block */
+.img-wrap {
+  overflow: hidden;
+  display: block;
+}
+.img-wrap:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.img-wrap.fill img {
+  width: 100%;
+  display: block;
+}
+.img-wrap.full img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.img-wrap img {
+  max-width: 100%;
+  display: inline-block;
+  -moz-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+/* Btns */
+
+.intro-tab {
+  position: relative;
+}
+.intro-tab:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*
+* ==========================================
+* Home Page Section
+* ==========================================
+*/
+header.sticky {
+  background-color: #08343f;
+  height: 70px;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 10px #000;
+}
+header.sticky .navbar {
+  padding: 0;
+}
+
+header {
+  position: relative;
+}
+.navbar .nav-link {
+  color: #a68f65 !important;
+}
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item.active .nav-link {
+  color: #a68f65;
+  font-weight: 900;
+}
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item:focus .nav-link {
+  color: #a68f65;
+  font-weight: 900;
+}
+.navbar-toggler {
+  top: 14px;
+  position: relative;
+  z-index: 999;
+}
+
+.navbar-nav {
+  padding: 20px 0;
+}
+.navbar-nav .nav-item .nav-link {
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-block;
+  align-items: center;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  text-transform: capitalize;
+}
+.navbar-nav .nav-item {
+  z-index: 1;
+  position: relative;
+  margin-right: 10px;
+}
+.banner-section .logo-image {
+  position: absolute;
+  top: 130px;
+  right: 20%;
+  width: 100%;
+  text-align: right;
+}
+.navbar button {
+  color: #ccc;
+  font-size: 30px;
+}
+/*
+* ==========================================
+* Banner Page Section
+* ==========================================
+*/
+
+.banner-section {
+  position: relative;
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 190px 0px 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.banner-content {
+  padding: 70px 0;
+  max-width: 300px;
+  width: 100%;
+  margin-left: 250px;
+}
+.banner-content h2 {
+  font-size: 38px;
+  color: var(--white);
+  margin-bottom: 10px;
+  text-align: left;
+}
+.banner-content h1 {
+  font-size: 38px;
+  line-height: 50px;
+  color: var(--white);
+  font-style: italic;
+  text-align: left;
+}
+/*
+* ==========================================
+* What we do Page Section
+* ==========================================
+*/
+
+.what-we-do-section {
+  position: relative;
+  background-color: #d6d1c7;
+}
+.what-we-do-section::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.what-tab {
+  padding-top: 30px;
+  position: relative;
+}
+.what-tab .what-sec p {
+  line-height: 26px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.what-tab ul {
+  margin-top: 90px;
+  padding-left: 90px;
+}
+.what-tab li {
+  padding: 10px 0;
+  text-align: left;
+}
+.what-tab li a {
+  color: #013440;
+  position: relative;
+  font-size: 23px;
+  font-family: "Regular";
+  font-weight: 500;
+}
+.what-tab a::before {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #a68f65;
+  content: "";
+}
+/*
+* ==========================================
+* About Page Section
+* ==========================================
+*/
+
+.about-section {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-image: url("../img/banner-shap.png");
+}
+.inner-container {
+  position: relative;
+  margin-top: 60px;
+}
+.about-section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.about-section .about-sec p {
+  margin-bottom: 20px;
+  color: #8c8c8c;
+  line-height: 26px;
+  font-size: 18px;
+  font-family: "Regular";
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+.about-section .about-sec h3 {
+  color: #8c8c8c;
+  font-family: "Regular";
+}
+.about-section .about-sec h4 {
+  padding-top: 10px;
+  font-size: 22px;
+  color: #8c8c8c;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+}
+/*
+* ==========================================
+* Our Team Page 1 Section
+* ==========================================
+*/
+
+.our-team1-section {
+  position: relative;
+  background-color: #d6d1c7;
+  padding: 180px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-team1-section::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.our-team1-section .inner-container {
+  padding: 0px 0;
+  margin: 0;
+}
+.our-team1-section .team-sec .img-wrap {
+  height: 250px;
+}
+.our-team1-section .team-sec .img-wrap img {
+  height: 100%;
+  width: 100%;
+}
+.inner_ttl {
+  font-family: var(--font_r);
+  position: relative;
+  padding: 5px 0 10px;
+  font-size: 25px;
+  display: inline-block;
+  color: #013440;
+}
+.inner_ttl::after {
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #a68f65;
+  content: "";
+  height: 2px;
+}
+
+/*
+* ==========================================
+* Contact Page Section
+* ==========================================
+*/
+.contact-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 180px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.contact-sec h2 {
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--white);
+  text-align: left;
+  margin-bottom: 30px;
+}
+.contact-section address {
+  display: block;
+  color: var(--white);
+  font-family: "Pro-Italic";
+  font-style: italic;
+  letter-spacing: 0.8px;
+  line-height: 26px;
+}
+.contact-section .logo-image {
+  margin-top: 40px;
+  margin-right: calc(100% - 73%);
+  position: absolute;
+  top: 84px;
+  right: -8px;
+  padding-right: 0;
+}
+.contact-section .logo-image img {
+  width: 100px;
+}
+#main .contact-logo img {
+  width: 80px;
+}
+#main .contact-logo {
+  left: 65%;
+  top: 70px;
+}
+/*
+* ==========================================
+* Finance Page Section
+* ==========================================
+*/
+.finance-section {
+  background-color: #d6d1c7;
+}
+.finance-section .footer {
+  padding: 7px;
+}
+.finance-section .nav {
+  border: none;
+}
+.finance-section .nav-tabs .nav-item {
+  position: relative;
+  padding-right: 40px;
+}
+.finance-section .nav-pills .nav-link::before {
+  background-color: #a68f65;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  content: "";
+}
+
+/*  */
+.finance-section .nav-pills .nav-link.active,
+.finance-section .nav-pills .show > .nav-link {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  font-weight: 600;
+}
+.finance-section .nav-tabs .nav-link {
+  border: none;
+  padding: 10px 0;
+}
+.finance-section .nav-tabs .nav-link:focus,
+.finance-section .nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.finance-sec ul li {
+  line-height: 26px;
+  color: #8c8c8c;
+  font-style: 14px;
+}
+.finance-sec .ttl {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #8c8c8c;
+  margin-bottom: 10px;
+}
+
+/*
+* ==========================================
+* Our Team Page Section
+* ==========================================
+*/
+.our-team-section {
+  position: relative;
+  background-color: #d6d1c7;
+}
+.our-team-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.team-bottom-sec .inner_ttl p {
+  color: #013440;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.team-slide-img {
+  width: 80px;
+  height: 80px;
+}
+.team-slide-img img {
+  width: 100%;
+  height: 100%;
+}
+.team-bottom-slide {
+  margin-top: 20px;
+}
+.team-bottom-slide ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-bottom-slide li {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+/******************************** 
+Work Section Page Section
+************************************/
+
+.work-section {
+  background-color: #fff;
+  position: relative;
+  padding-bottom: 0px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.work-section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.work-section .footer {
+  position: relative;
+}
+.work-section h3 {
+  color: #013440;
+  position: relative;
+  font-weight: 900;
+}
+.work-section h3::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #a68f65;
+}
+.work-blog {
+  margin-top: 10px;
+}
+.work-heading {
+  background-color: #e8e8e8;
+  text-align: center;
+  color: #8c8c8c;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.work-heading h4 {
+  font-size: 20px;
+}
+.work-content {
+  background-color: #e8e8e8;
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+.work-content p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 5px;
+  color: #8c8c8c;
+}
+
+.work-blog .col-md-4,
+.work-blog .col-md-8 {
+  padding: 8px;
+}
+
+/*
+* ==========================================
+* Footer Page Section
+* ==========================================
+*/
+
+.footer {
+  position: relative;
+}
+.footer::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.footer .footer-img {
+  width: 250px;
+  height: 100%;
+}
+.footer .down-arrow img {
+  width: 30px;
+}
+.footer .down-arrow {
+  text-align: center;
+  z-index: 9999;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+.footer {
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 30px;
+}

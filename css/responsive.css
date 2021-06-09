@@ -1,0 +1,423 @@
+/****** Preloader Start ********/
+.Preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111;
+    z-index: 1099;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease;
+}
+.Preloader.loaded {
+    visibility: hidden;
+    opacity: 0;
+    z-index: -99;
+}
+.Preloader .loader {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fff;
+    border-right: 2px solid transparent;
+    border-radius: 50%;
+    animation: ani01 2s linear infinite;
+}
+@keyframes ani01 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} /****** Preloader Ends ********/
+
+@media (max-width: 1200px) {
+    .banner-section {
+        padding-bottom: 30px;
+    }
+    .our-team-section {
+        height: 100vh;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .banner-content {
+        margin-left: 150px;
+    }
+    .our-team1-section,
+    .what-we-do-section {
+        padding-top: 50px;
+    }
+}
+@media (max-width: 1024px) {
+    .team-bottom-slide {
+        margin-top: 100px;
+    }
+    .work-section .footer {
+        position: absolute;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-left: 10px;
+        width: 100%;
+    }
+    .our-team1-section .team-sec .img-wrap {
+        height: 200px;
+        width: 200px;
+        margin: auto;
+    }
+    .our-team1-section .team-content {
+        text-align: center;
+    }
+    .banner-content {
+        margin-left: 50px;
+        padding: 0;
+    }
+    .banner-section {
+        background-size: 160% 101%;
+        background-position: top left -136px;
+    }
+    .banner-section .logo-image {
+        right: 40px;
+    }
+    .banner-section .logo-image img {
+        width: 280px;
+    }
+    .about-section {
+        padding-top: 105px;
+    }
+    /* What we do Section */
+    .what-tab ul {
+        padding: 0;
+    }
+    .what-sec ul li {
+        display: block;
+        text-align: center;
+    }
+    .what-tab a::before {
+        display: none;
+    }
+    .what-tab li a {
+        border-right: 1px solid #a68f65;
+        padding-right: 20px;
+    }
+    .what-sec ul li:nth-child(2),
+    .what-sec ul li:nth-child(3) {
+        display: inline-block;
+    }
+    .what-tab li a br {
+        display: none;
+    }
+    .what-sec ul li:nth-child(3) a {
+        border: none;
+        padding-left: 10px;
+    }
+    .about-section .col-md-8 {
+        margin: auto;
+    }
+    .about-tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 67vh;
+    }
+    .our-team-section .footer {
+        padding-bottom: 0;
+    }
+    .our-team-section .team-bottom-slide ul {
+        justify-content: flex-end;
+    }
+    .finance-section .nav {
+        justify-content: center;
+    }
+    /* .work-section .footer {
+        padding-bottom: 0;
+        padding-top: 40px;
+    } */
+    .our-team1-section .intro-tab {
+        margin-bottom: 20px;
+    }
+    .our-team1-section .inner-container {
+        padding: 0 40px;
+    }
+    .our-team1-section .footer {
+        padding-bottom: 0;
+    }
+    .contact-section {
+        background-size: 180% 100%;
+        background-position: top center;
+    }
+    .contact-section .contact-sec {
+        margin-left: 20px;
+    }
+    #main .contact-logo {
+        top: 102px;
+        left: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-section,
+    .contact-section,
+    .about-section,
+    .our-team1-section,
+    .what-we-do-section,
+    .banner-section {
+        height: 100vh;
+    }
+    .about-section {
+        height: 100vh;
+    }
+    .our-team1-section,
+    .what-we-do-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main .contact-logo {
+        top: 102px;
+        left: 75%;
+    }
+    .contact-section {
+        background-size: 260% 100%;
+        background-position: center;
+    }
+    .our-team-section {
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 767px) {
+    /* .main-container{padding: 0 30px;} */
+    /* .navbar-toggler {
+        border: none;
+        z-index: 999;
+        position: absolute;
+        top: 100px;
+        left: 15px;
+        background-color: transparent;
+    } */
+    .navbar-toggler:focus {
+        border: none;
+    }
+    .navbar-nav {
+        background-color: #08343f;
+        padding: 20px;
+        position: absolute;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    /* .navbar-brand {
+        left: 38%;
+    } */
+    .banner-section {
+        background-size: cover;
+        background-position: center;
+    }
+    .footer .footer-img img {
+        width: 50px;
+    }
+    footer .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .finance-section {
+        padding: 100px 0 0;
+    }
+}
+@media (max-width: 576px) {
+    .finance-section .inner-container {
+        margin-top: 40px;
+    }
+    .finance-section .nav-tabs .nav-item {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .team-bottom-slide {
+        margin: 30px 0;
+    }
+    .our-team1-section,
+    .about-tab {
+        height: initial;
+    }
+    .our-team1-section .inner-container {
+        padding: 40px 0 0;
+    }
+    .what-we-do-section,
+    .about-section,
+    .finance-section,
+    .our-team-section,
+    .work-section {
+        height: initial;
+    }
+    .finance-section {
+        overflow: scroll;
+    }
+    .our-team-section {
+        padding: 0 20px;
+    }
+    .our-team1-section,
+    .our-team-section,
+    /* .work-section, */
+    .about-section,
+
+    .what-we-do-section {
+        padding-top: 50px;
+        overflow: scroll;
+    }
+    .our-team-section .slide img {
+        width: 240px;
+    }
+    #slider {
+        margin-top: 40px;
+    }
+
+    .team-bottom-slide li {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .our-team-img {
+        margin-bottom: 20px;
+    }
+    .work-section .col-md-4,
+    .work-section .col-md-8 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .work-section .container {
+        height: 100%;
+    }
+    .team-sec {
+        text-align: center;
+    }
+    /* what-we-do-section */
+    .our-team1-section .footer,
+    .work-section .footer,
+    .finance-section .footer,
+    .our-team-section .footer,
+    .about-section .footer,
+    .what-we-do-section .footer {
+        display: none;
+    }
+    #main .contact-logo {
+        top: 100px;
+        left: 280px;
+    }
+    .contact-section .down-arrow {
+        display: none;
+    }
+    .contact-section .footer .footer-img img {
+        width: 180px;
+    }
+    .banner-section .logo-image {
+        right: 30px;
+        top: 71px;
+    }
+    .contact-section .logo-image {
+        margin-right: 35px;
+    }
+    .contact-section .logo-image img {
+        width: 80px;
+    }
+    .banner-section .logo-image img {
+        width: 200px;
+    }
+}
+@media (max-width: 480px) {
+    .banner-content {
+        margin-left: 0;
+        max-width: 212px;
+        width: 100%;
+    }
+    /* .navbar-brand {
+        left: 37%;
+    }
+    .navbar-brand img {
+        width: 200px;
+    } */
+    .banner-content h2,
+    .banner-content h1 {
+        font-size: 25px;
+    }
+    .banner-section {
+        padding: 50px 0 0;
+    }
+
+    .what-tab ul {
+        margin-top: 0;
+    }
+    .what-tab ul li {
+        display: inline-block;
+        padding: 5px 0;
+    }
+    .what-tab ul li a {
+        font-size: 14px;
+        padding-right: 5px;
+    }
+    .about-section .about-sec h3 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .about-section .about-sec h3 br {
+        display: none;
+    }
+    .team-slide-img {
+        width: 50px;
+        height: 50px;
+    }
+    .team-bottom-sec .inner_ttl p {
+        font-size: 13px;
+    }
+    .contact-sec h2 {
+        font-size: 18px;
+    }
+    .contact-section {
+        background-size: 265% 100%;
+    }
+    .contact-section .contact-sec {
+        margin-left: 0;
+    }
+    #main .contact-logo {
+        left: 244px;
+    }
+    .what-we-do-section {
+        padding: 50px 0 100px;
+    }
+}
+@media (max-width: 360px) {
+    #main .contact-logo {
+        left: 190px;
+    }
+    .contact-sec h2 {
+        font-size: 14px;
+    }
+    .what-we-do-section {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .banner-section .logo-image {
+        right: 14px;
+    }
+    .team-bottom-sec .inner_ttl p {
+        font-size: 11px;
+    }
+}
