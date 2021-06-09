@@ -4,4 +4,3 @@
 
 ![Ganymedecapital Website](https://i.ibb.co/tCPchkT/jkkl.png)
 
-
